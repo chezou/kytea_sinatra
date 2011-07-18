@@ -1,0 +1,15 @@
+!!! XHTML
+%html
+  %head
+    %title kytea-sinatra
+  %body
+    %form{ :action => "/kytea", :method => "get" }
+      %input{:type => "text", :name => "str", :class => "text"}
+      %input{:type => "submit", :value => "Analyze", :class => "button"}
+    %div
+      - if params[:str] != ""
+        %div= "Result of KyTea"
+        %p= @k_str
+        - if @m_str
+          %div= "Result of MeCab"
+          %p= @m_str
