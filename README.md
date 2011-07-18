@@ -8,6 +8,8 @@ Install Dependencies
 First of all, you need to install KyTea and Mykytea-ruby.
 
 [KyTea](http://www.phontron.com/kytea/)
+
+
 [Mykytea-ruby](https://github.com/chezou/Mykytea-ruby)
 
 Then,
